@@ -442,7 +442,7 @@ public class SNavigationDrawer extends RelativeLayout {
     }
 
     public void setMenuIconSize(float menuIconSize) {
-        //Todo Change Icon Size
+
         this.menuIconSize = menuIconSize;
     }
 
