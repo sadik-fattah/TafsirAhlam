@@ -13,7 +13,32 @@ import androidx.fragment.app.FragmentManager;
 
 import com.guercifzone.tafsirahlam.CustomDrawer.MenuItem;
 import com.guercifzone.tafsirahlam.CustomDrawer.SNavigationDrawer;
+import com.guercifzone.tafsirahlam.UIFragment.Aaa_Fragment;
 import com.guercifzone.tafsirahlam.UIFragment.Alif_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Baa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Daad_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Dall_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Dthaa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Faa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Ghaa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Haae_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Jim_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Khaa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Laam_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Miim_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Noon_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Qaa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Raa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Saad_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Shin_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Sin_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Taa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Taae_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Thaa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Thaal_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Waaw_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Yaa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Zaa_Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,27 +62,33 @@ public static Fragment fragment;
 
         sNavigationDrawer = findViewById(R.id.navigationDrawer);
         List<MenuItem> menuItems = new ArrayList<>();
-        menuItems.add(new MenuItem(R.drawable.python, "Python"));
-        menuItems.add(new MenuItem(R.drawable.java, "Java"));
-        menuItems.add(new MenuItem(R.drawable.android, "Android"));
-        menuItems.add(new MenuItem(R.drawable.html, "Html"));
-        menuItems.add(new MenuItem(R.drawable.c, "C"));
-        menuItems.add(new MenuItem(R.drawable.cplusplus, "Cplusplus"));
-        menuItems.add(new MenuItem(R.drawable.csharp, "CSharp"));
-        menuItems.add(new MenuItem(R.drawable.css, "Css"));
-        menuItems.add(new MenuItem(R.drawable.go, "Go"));
-        menuItems.add(new MenuItem(R.drawable.graphic, "Graphics"));
-        menuItems.add(new MenuItem(R.drawable.ios, "Ios"));
-        menuItems.add(new MenuItem(R.drawable.javascript, "javaScript"));
-        menuItems.add(new MenuItem(R.drawable.kotlin, "Kotlin"));
-        menuItems.add(new MenuItem(R.drawable.msoffice, "MsOffice"));
-        menuItems.add(new MenuItem(R.drawable.perl, "Perl"));
-        menuItems.add(new MenuItem(R.drawable.php, "PHP"));
-        menuItems.add(new MenuItem(R.drawable.ruby, "Ruby"));
-        menuItems.add(new MenuItem(R.drawable.swift, "Swift"));
-        menuItems.add(new MenuItem(R.drawable.vbnet, "Vb.net"));
-        menuItems.add(new MenuItem(R.drawable.asp, "Asp"));
-        menuItems.add(new MenuItem(R.drawable.database,"DataBase"));
+        menuItems.add(new MenuItem("حرف الألف",R.drawable.alif));
+        menuItems.add(new MenuItem("حرف الباء",R.drawable.baa));
+        menuItems.add(new MenuItem("حرف التاء",R.drawable.taa));
+        menuItems.add(new MenuItem("حرف الثاء",R.drawable.taae));
+        menuItems.add(new MenuItem("حرف الجيم",R.drawable.jim));
+        menuItems.add(new MenuItem("حرف الحاء",R.drawable.haa));
+        menuItems.add(new MenuItem("حرف الخاء",R.drawable.khaa));
+        menuItems.add(new MenuItem("حرف الدال",R.drawable.dall));
+        menuItems.add(new MenuItem("حرف الذال",R.drawable.thaal));
+        menuItems.add(new MenuItem("حرف السين",R.drawable.sin));
+        menuItems.add(new MenuItem("حرف الشين",R.drawable.shin));
+        menuItems.add(new MenuItem("حرف الصاد",R.drawable.saad));
+        menuItems.add(new MenuItem("حرف الضاد",R.drawable.daad));
+        menuItems.add(new MenuItem("حرف الطاء",R.drawable.taae));
+        menuItems.add(new MenuItem("حرف الظاد",R.drawable.thaee));
+        menuItems.add(new MenuItem("حرف العين",R.drawable.iin));
+        menuItems.add(new MenuItem("حرف الغين",R.drawable.ghin));
+        menuItems.add(new MenuItem("حرف الفاء",R.drawable.faa));
+        menuItems.add(new MenuItem("حرف القاف",R.drawable.qaaf));
+        menuItems.add(new MenuItem("حرف الكاف",R.drawable.kaff));
+        menuItems.add(new MenuItem("حرف  اللام",R.drawable.laam));
+        menuItems.add(new MenuItem("حرف الميم",R.drawable.miim));
+        menuItems.add(new MenuItem("حرف النون",R.drawable.noon));
+        menuItems.add(new MenuItem("حرف الهاء",R.drawable.haae));
+        menuItems.add(new MenuItem("حرف الواو",R.drawable.waaw));
+        menuItems.add(new MenuItem("حرف الياء",R.drawable.yaae));
+
         sNavigationDrawer.setMenuItemList(menuItems);
         fragmentClass =  Alif_Fragment.class;
         try {
@@ -79,83 +110,112 @@ public static Fragment fragment;
                         break;
                     }
                     case 1:{
-                        fragmentClass = Fragment_Java.class;
+                        fragmentClass = Baa_Fragment.class;
                         break;
                     }
                     case 2: {
-                        fragmentClass = Fragment_Android.class;
+                        fragmentClass = Taa_Fragment.class;
                         break;
                     }
                     case 3:{
-                        fragmentClass = Fragment_Html.class;
+                        fragmentClass = Thaa_Fragment.class;
                         break;
                     }
                     case 4:{
-                        fragmentClass = Fragment_C.class;
+                        fragmentClass = Jim_Fragment.class;
                         break;
                     }
                     case 5:{
-                        fragmentClass = Fragment_CPlusPlus.class;
+                        fragmentClass = Haae_Fragment.class;
                         break;
                     }
                     case 6:{
-                        fragmentClass = Fragment_CSharp.class;
+                        fragmentClass = Khaa_Fragment.class;
                         break;
                     }
                     case 7:{
-                        fragmentClass = Fragment_Css.class;
+                        fragmentClass = Dall_Fragment.class;
                         break;
                     }
                     case 8:{
-                        fragmentClass = Fragment_Go.class;
+                        fragmentClass = Thaal_Fragment.class;
                         break;
                     }
                     case 9:{
-                        fragmentClass = Fragment_Graphics.class;
+                        fragmentClass = Raa_Fragment.class;
                         break;
                     }
                     case 10:{
-                        fragmentClass = Fragment_IOS.class;
+                        fragmentClass = Zaa_Fragment.class;
                         break;
                     }
                     case 11:{
-                        fragmentClass = Fragment_JavaScript.class;
+                        fragmentClass = Sin_Fragment.class;
                         break;
                     }
                     case 12:{
-                        fragmentClass = Fragment_kotlin.class;
+                        fragmentClass = Shin_Fragment.class;
                         break;
                     }
                     case 13:{
-                        fragmentClass = Fragment_MsOffice.class;
+                        fragmentClass = Saad_Fragment.class;
                         break;
                     }
                     case 14:{
-                        fragmentClass = Fragment_Perl.class;
+                        fragmentClass = Daad_Fragment.class;
                         break;
                     }
                     case 15:{
-                        fragmentClass = Fragment_PHP.class;
+                        fragmentClass = Taae_Fragment.class;
                         break;
                     }
                     case 16:{
-                        fragmentClass = Fragment_Ruby.class;
+                        fragmentClass = Dthaa_Fragment.class;
                         break;
                     }
                     case 17:{
-                        fragmentClass = Fragment_Swift.class;
+                        fragmentClass = Aaa_Fragment.class;
                         break;
                     }
                     case 18:{
-                        fragmentClass = Fragment_Vbnet.class;
+                        fragmentClass = Ghaa_Fragment.class;
                         break;
                     }
                     case 19:{
-                        fragmentClass = Fragment_Asp.class;
+                        fragmentClass = Faa_Fragment.class;
                         break;
                     }
                     case 20:{
-                        fragmentClass = Fragment_DataBase.class;
+                        fragmentClass = Qaa_Fragment.class;
+                        break;
+                    }
+                    case 21:{
+                        fragmentClass = Khaa_Fragment.class;
+                        break;
+                        }
+                    case 22:{
+                        fragmentClass = Laam_Fragment.class;
+                        break;
+                    }
+                    case 23:{
+                        fragmentClass = Miim_Fragment.class;
+                        break;
+                    }
+                    case 24:{
+                        fragmentClass = Noon_Fragment.class;
+                        break;
+                    }
+                    case 25:{
+                        fragmentClass = Haae_Fragment.class;
+                        break;
+                    }
+                    case 26:{
+                        fragmentClass = Waaw_Fragment.class;
+                        break;
+                    }
+                    case 27:{
+                        fragmentClass = Yaa_Fragment.class;
+                        break;
                     }
                 }
 

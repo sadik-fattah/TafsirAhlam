@@ -11,8 +11,8 @@ import androidx.fragment.app.Fragment;
 
 import com.guercifzone.tafsirahlam.R;
 
-public class Dthaa_Fragment extends Fragment {
-    public Dthaa_Fragment(){}
+public class Waaw_Fragment extends Fragment {
+    public Waaw_Fragment(){}
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater,
