@@ -32,6 +32,21 @@ android {
 }
 
 dependencies {
+    // Retrofit for API requests
+    implementation ("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation ("com.squareup.retrofit2:converter-gson:2.9.0")
+
+// Room for local database storage
+    implementation ("androidx.room:room-runtime:2.4.2")
+    annotationProcessor ("androidx.room:room-compiler:2.4.2")
+
+// RecyclerView for displaying data
+    implementation ("androidx.recyclerview:recyclerview:1.2.1")
+
+// Glide for image loading (optional if you have images)
+    implementation ("com.github.bumptech.glide:glide:4.13.2")
+    annotationProcessor ("com.github.bumptech.glide:compiler:4.13.2")
+
 
     implementation(libs.appcompat)
     implementation(libs.material)

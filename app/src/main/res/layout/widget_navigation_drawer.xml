@@ -57,7 +57,8 @@
                     android:tint="@android:color/black"
                     android:id="@+id/menuIV"
                     android:src="@drawable/asl_pathmorph_drawer"
-                    android:layout_margin="4dp"/>
+                    android:layout_margin="4dp"
+                    tools:ignore="UseAppTint" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -69,7 +70,7 @@
                     android:layout_marginRight="30dp"
                     android:layout_gravity="center"
                     android:gravity="center"
-                    android:text="Python"/>
+                    android:text="تفسير الأحلام"/>
             </RelativeLayout>
             <LinearLayout
                 android:layout_width="match_parent"
