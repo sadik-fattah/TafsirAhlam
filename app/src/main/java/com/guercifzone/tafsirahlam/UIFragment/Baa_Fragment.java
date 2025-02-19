@@ -13,6 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
 import com.guercifzone.tafsirahlam.JsonParser.Tafsir_1;
+import com.guercifzone.tafsirahlam.JsonParser.Tafsir_2;
 import com.guercifzone.tafsirahlam.R;
 
 import java.util.List;
@@ -20,15 +21,15 @@ import java.util.List;
 public class Baa_Fragment  extends Fragment {
     public Baa_Fragment(){
     }
-    private TextView tafsirTextView;
+
     @SuppressLint("MissingInflatedId")
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         View root = inflater.inflate(R.layout.fragment_main, container, false);
         LinearLayout linearLayout = root.findViewById(R.id.linearLayout);
-        List<Tafsir_1.SectionGroupOne> sections = Tafsir_1.readJsonFile(requireContext());
-        for (Tafsir_1.SectionGroupOne section : sections) {
+        List<Tafsir_2.SectionGroupOne> sections = Tafsir_2.readJsonFile(requireContext());
+        for (Tafsir_2.SectionGroupOne section : sections) {
             TextView titleTextView = new TextView(requireContext());
             titleTextView.setText(section.getTitle());
             titleTextView.setTextSize(18);

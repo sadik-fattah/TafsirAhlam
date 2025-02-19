@@ -11,14 +11,13 @@ import org.json.JSONObject;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
-public class Tafsir_2 {
-    public static List<Tafsir_2.SectionGroupOne> readJsonFile(Context context) {
-        List<Tafsir_2.SectionGroupOne> sectionsList = new ArrayList<>();
+public class Tafsir_3 {
+    public static List<Tafsir_3.SectionGroupOne> readJsonFile(Context context) {
+        List<Tafsir_3.SectionGroupOne> sectionsList = new ArrayList<>();
         try {
             Resources resources = context.getResources();
-            InputStream inputStream = resources.openRawResource(R.raw.tafsir_2);
+            InputStream inputStream = resources.openRawResource(R.raw.tafsir_3);
             int size = inputStream.available();
             byte[] buffer = new byte[size];
             inputStream.read(buffer);
@@ -32,14 +31,14 @@ public class Tafsir_2 {
                 Object content = section.get("content");
 
                 if (content instanceof String) {
-                    sectionsList.add(new Tafsir_2.SectionGroupOne(sectionTitle, (String) content));
+                    sectionsList.add(new Tafsir_3.SectionGroupOne(sectionTitle, (String) content));
                 } else if (content instanceof  JSONArray) {
                     StringBuilder contentBuilder = new StringBuilder();
                     JSONArray contentArray = (JSONArray) content;
                     for (int j = 0; j < contentArray.length(); j++) {
                         contentBuilder.append(contentArray.getString(j)).append("\n");
                     }
-                    sectionsList.add(new Tafsir_2.SectionGroupOne(sectionTitle, contentBuilder.toString()));
+                    sectionsList.add(new Tafsir_3.SectionGroupOne(sectionTitle, contentBuilder.toString()));
                 }
             }
         } catch (Exception e) {
@@ -47,6 +46,7 @@ public class Tafsir_2 {
         }
         return sectionsList;
     }
+
     public static class SectionGroupOne {
         private String title;
         private String content;
