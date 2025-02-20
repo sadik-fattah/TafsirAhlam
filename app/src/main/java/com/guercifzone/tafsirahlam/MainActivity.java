@@ -13,32 +13,32 @@ import androidx.fragment.app.FragmentManager;
 
 import com.guercifzone.tafsirahlam.CustomDrawer.MenuItem;
 import com.guercifzone.tafsirahlam.CustomDrawer.SNavigationDrawer;
-import com.guercifzone.tafsirahlam.UIFragment.Aaa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Alif_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Baa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Daad_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Dall_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Dthaa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Faa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Ghaa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Haae_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Jim_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Khaa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Laam_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Miim_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Noon_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Qaa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Raa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Saad_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Shin_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Sin_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Taa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Taae_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Thaa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Thaal_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Waaw_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Yaa_Fragment;
-import com.guercifzone.tafsirahlam.UIFragment.Zaa_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir18_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir1_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir2_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir15_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir8_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir9_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir20_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir19_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir26_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir5_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir7_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir23_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir24_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir25_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir21_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir10_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir14_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir13_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir12_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir3_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir16_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir4_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir17_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir27_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir28_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir11_Fragment;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -90,7 +90,7 @@ public static Fragment fragment;
         menuItems.add(new MenuItem("حرف الياء",R.drawable.yaae));
 
         sNavigationDrawer.setMenuItemList(menuItems);
-        fragmentClass =  Alif_Fragment.class;
+        fragmentClass =  Tafsir1_Fragment.class;
         try {
             fragment = (Fragment) fragmentClass.newInstance();
         } catch (Exception e) {
@@ -106,115 +106,115 @@ public static Fragment fragment;
                 System.out.println("Position "+position);
                 switch (position){
                     case 0:{
-                        fragmentClass = Alif_Fragment.class;
+                        fragmentClass = Tafsir1_Fragment.class;
                         break;
                     }
                     case 1:{
-                        fragmentClass = Baa_Fragment.class;
+                        fragmentClass = Tafsir2_Fragment.class;
                         break;
                     }
                     case 2: {
-                        fragmentClass = Taa_Fragment.class;
+                        fragmentClass = Tafsir3_Fragment.class;
                         break;
                     }
                     case 3:{
-                        fragmentClass = Thaa_Fragment.class;
+                        fragmentClass = Tafsir4_Fragment.class;
                         break;
                     }
                     case 4:{
-                        fragmentClass = Jim_Fragment.class;
+                        fragmentClass = Tafsir5_Fragment.class;
                         break;
                     }
                     case 5:{
-                        fragmentClass = Haae_Fragment.class;
+                        fragmentClass = Tafsir26_Fragment.class;
                         break;
                     }
                     case 6:{
-                        fragmentClass = Khaa_Fragment.class;
+                        fragmentClass = Tafsir7_Fragment.class;
                         break;
                     }
                     case 7:{
-                        fragmentClass = Dall_Fragment.class;
+                        fragmentClass = Tafsir8_Fragment.class;
                         break;
                     }
                     case 8:{
-                        fragmentClass = Thaal_Fragment.class;
+                        fragmentClass = Tafsir17_Fragment.class;
                         break;
                     }
                     case 9:{
-                        fragmentClass = Raa_Fragment.class;
+                        fragmentClass = Tafsir10_Fragment.class;
                         break;
                     }
                     case 10:{
-                        fragmentClass = Zaa_Fragment.class;
+                        fragmentClass = Tafsir11_Fragment.class;
                         break;
                     }
                     case 11:{
-                        fragmentClass = Sin_Fragment.class;
+                        fragmentClass = Tafsir12_Fragment.class;
                         break;
                     }
                     case 12:{
-                        fragmentClass = Shin_Fragment.class;
+                        fragmentClass = Tafsir13_Fragment.class;
                         break;
                     }
                     case 13:{
-                        fragmentClass = Saad_Fragment.class;
+                        fragmentClass = Tafsir14_Fragment.class;
                         break;
                     }
                     case 14:{
-                        fragmentClass = Daad_Fragment.class;
+                        fragmentClass = Tafsir15_Fragment.class;
                         break;
                     }
                     case 15:{
-                        fragmentClass = Taae_Fragment.class;
+                        fragmentClass = Tafsir16_Fragment.class;
                         break;
                     }
                     case 16:{
-                        fragmentClass = Dthaa_Fragment.class;
+                        fragmentClass = Tafsir9_Fragment.class;
                         break;
                     }
                     case 17:{
-                        fragmentClass = Aaa_Fragment.class;
+                        fragmentClass = Tafsir18_Fragment.class;
                         break;
                     }
                     case 18:{
-                        fragmentClass = Ghaa_Fragment.class;
+                        fragmentClass = Tafsir19_Fragment.class;
                         break;
                     }
                     case 19:{
-                        fragmentClass = Faa_Fragment.class;
+                        fragmentClass = Tafsir20_Fragment.class;
                         break;
                     }
                     case 20:{
-                        fragmentClass = Qaa_Fragment.class;
+                        fragmentClass = Tafsir21_Fragment.class;
                         break;
                     }
                     case 21:{
-                        fragmentClass = Khaa_Fragment.class;
+                        fragmentClass = Tafsir7_Fragment.class;
                         break;
                         }
                     case 22:{
-                        fragmentClass = Laam_Fragment.class;
+                        fragmentClass = Tafsir23_Fragment.class;
                         break;
                     }
                     case 23:{
-                        fragmentClass = Miim_Fragment.class;
+                        fragmentClass = Tafsir24_Fragment.class;
                         break;
                     }
                     case 24:{
-                        fragmentClass = Noon_Fragment.class;
+                        fragmentClass = Tafsir25_Fragment.class;
                         break;
                     }
                     case 25:{
-                        fragmentClass = Haae_Fragment.class;
+                        fragmentClass = Tafsir26_Fragment.class;
                         break;
                     }
                     case 26:{
-                        fragmentClass = Waaw_Fragment.class;
+                        fragmentClass = Tafsir27_Fragment.class;
                         break;
                     }
                     case 27:{
-                        fragmentClass = Yaa_Fragment.class;
+                        fragmentClass = Tafsir28_Fragment.class;
                         break;
                     }
                 }
