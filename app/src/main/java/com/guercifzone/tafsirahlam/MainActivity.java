@@ -15,8 +15,10 @@ import com.guercifzone.tafsirahlam.CustomDrawer.MenuItem;
 import com.guercifzone.tafsirahlam.CustomDrawer.SNavigationDrawer;
 import com.guercifzone.tafsirahlam.UIFragment.Tafsir18_Fragment;
 import com.guercifzone.tafsirahlam.UIFragment.Tafsir1_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir22_Fragment;
 import com.guercifzone.tafsirahlam.UIFragment.Tafsir2_Fragment;
 import com.guercifzone.tafsirahlam.UIFragment.Tafsir15_Fragment;
+import com.guercifzone.tafsirahlam.UIFragment.Tafsir6_Fragment;
 import com.guercifzone.tafsirahlam.UIFragment.Tafsir8_Fragment;
 import com.guercifzone.tafsirahlam.UIFragment.Tafsir9_Fragment;
 import com.guercifzone.tafsirahlam.UIFragment.Tafsir20_Fragment;
@@ -71,6 +73,8 @@ public static Fragment fragment;
         menuItems.add(new MenuItem("حرف الخاء",R.drawable.khaa));
         menuItems.add(new MenuItem("حرف الدال",R.drawable.dall));
         menuItems.add(new MenuItem("حرف الذال",R.drawable.thaal));
+        menuItems.add(new MenuItem("حرف الراء",R.drawable.raa));
+        menuItems.add(new MenuItem("حرف الزاي",R.drawable.ziin));
         menuItems.add(new MenuItem("حرف السين",R.drawable.sin));
         menuItems.add(new MenuItem("حرف الشين",R.drawable.shin));
         menuItems.add(new MenuItem("حرف الصاد",R.drawable.saad));
@@ -126,7 +130,7 @@ public static Fragment fragment;
                         break;
                     }
                     case 5:{
-                        fragmentClass = Tafsir26_Fragment.class;
+                        fragmentClass = Tafsir6_Fragment.class;
                         break;
                     }
                     case 6:{
@@ -138,7 +142,7 @@ public static Fragment fragment;
                         break;
                     }
                     case 8:{
-                        fragmentClass = Tafsir17_Fragment.class;
+                        fragmentClass = Tafsir9_Fragment.class;
                         break;
                     }
                     case 9:{
@@ -170,7 +174,7 @@ public static Fragment fragment;
                         break;
                     }
                     case 16:{
-                        fragmentClass = Tafsir9_Fragment.class;
+                        fragmentClass = Tafsir17_Fragment.class;
                         break;
                     }
                     case 17:{
@@ -190,7 +194,7 @@ public static Fragment fragment;
                         break;
                     }
                     case 21:{
-                        fragmentClass = Tafsir7_Fragment.class;
+                        fragmentClass = Tafsir22_Fragment.class;
                         break;
                         }
                     case 22:{
@@ -220,39 +224,31 @@ public static Fragment fragment;
                 }
 
                 sNavigationDrawer.setDrawerListener(new SNavigationDrawer.DrawerListener() {
-
                     @Override
                     public void onDrawerOpened() {
 
                     }
-
                     @Override
                     public void onDrawerOpening(){
 
                     }
-
                     @Override
                     public void onDrawerClosing(){
                         System.out.println("Drawer closed");
-
                         try {
                             fragment = (Fragment) fragmentClass.newInstance();
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-
                         if (fragment != null) {
                             FragmentManager fragmentManager = getSupportFragmentManager();
                             fragmentManager.beginTransaction().setCustomAnimations(android.R.animator.fade_in, android.R.animator.fade_out).replace(R.id.framelayout, fragment).commit();
 
                         }
                     }
-
                     @Override
                     public void onDrawerClosed() {
-
                     }
-
                     @Override
                     public void onDrawerStateChanged(int newState) {
                         System.out.println("State "+newState);

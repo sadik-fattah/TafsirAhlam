@@ -12,7 +12,7 @@ import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Tafsir_1 {
+public class    Tafsir_1 {
     public static List<SectionGroupOne> readJsonFile(Context context) {
         List<SectionGroupOne> sectionsList = new ArrayList<>();
         try {
